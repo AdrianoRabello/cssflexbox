@@ -1,0 +1,57 @@
+
+/* 
+
+  display: flex;            -> this make divs insife container to be like column
+  flex-gow: 1;              -> to with container like 100% width 
+  flex-basis: 100px;        -> the caontainer with start in 100px bux if less it goes down 
+  flex-wrap:wrap;           -> this make the caontainer breack lines with with no suport width
+  flex: 1 0 1;              -> values are flex-grow, flex-srink,  flex-basis (in this order)
+  flex-flow: column;        -> diplay alements like a column, row display like row
+  justify-content: center;  -> align item in horizontal; 
+  align-items: center;      -> align itens vertical 
+  
+
+*/
+
+
+body{
+  background-color: #eee;
+  margin: 0;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 960px;
+  margin: 0px auto;
+  height: 600px;
+  border:2px solid blue;
+}
+
+.flex-container{
+  /*  flex: 1 0 200px; flex represents flex-grow felx-shrink flex-basis */
+  display: flex;
+  background-color: #cccc;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid black;
+  height: 100%;
+}
+
+
+.box{
+  height: 100px;
+  min-width: 100px;
+}
+
+.one{
+  background-color: blue;
+}
+.two{
+  background-color: green;
+}
+
+.three{
+  background-color: red;
+}
